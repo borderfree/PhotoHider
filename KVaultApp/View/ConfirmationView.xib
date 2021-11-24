@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Rubik-Medium.ttf">
+            <string>Rubik-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ConfirmationView" customModule="KVaultApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZQ4-KT-ACq">
+                    <rect key="frame" x="30" y="235" width="315" height="197"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Password" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3cf-Jz-rox">
+                            <rect key="frame" x="14" y="25" width="287" height="21"/>
+                            <fontDescription key="fontDescription" name="Rubik-Medium" family="Rubik" pointSize="18"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="fRC-0I-faa">
+                            <rect key="frame" x="34" y="122" width="247" height="50"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JLH-WM-ndR">
+                                    <rect key="frame" x="0.0" y="0.0" width="108.5" height="50"/>
+                                    <color key="backgroundColor" red="0.37647058820000001" green="0.53333333329999999" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="Rtu-8M-0p7"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Rubik-Medium" family="Rubik" pointSize="18"/>
+                                    <state key="normal" title="Submit"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="5"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qfL-a1-IKl">
+                                    <rect key="frame" x="138.5" y="0.0" width="108.5" height="50"/>
+                                    <fontDescription key="fontDescription" name="Rubik-Medium" family="Rubik" pointSize="18"/>
+                                    <state key="normal" title="Cancel">
+                                        <color key="titleColor" red="0.37647058823529411" green="0.53333333333333333" blue="0.90980392156862744" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="5"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                            <real key="value" value="1"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                            <color key="value" red="0.37647058820000001" green="0.53333333329999999" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                            </subviews>
+                        </stackView>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nxi-EV-Bvv">
+                            <rect key="frame" x="35" y="71" width="245" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="txG-LB-Tm9"/>
+                            </constraints>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="fRC-0I-faa" firstAttribute="leading" secondItem="ZQ4-KT-ACq" secondAttribute="leading" constant="34" id="JcG-p1-E61"/>
+                        <constraint firstItem="Nxi-EV-Bvv" firstAttribute="leading" secondItem="ZQ4-KT-ACq" secondAttribute="leading" constant="35" id="KSk-z5-1AH"/>
+                        <constraint firstAttribute="trailing" secondItem="fRC-0I-faa" secondAttribute="trailing" constant="34" id="LDD-6F-yNQ"/>
+                        <constraint firstAttribute="trailing" secondItem="Nxi-EV-Bvv" secondAttribute="trailing" constant="35" id="QLZ-AT-aIb"/>
+                        <constraint firstAttribute="bottom" secondItem="fRC-0I-faa" secondAttribute="bottom" constant="25" id="Urk-df-bKi"/>
+                        <constraint firstItem="3cf-Jz-rox" firstAttribute="top" secondItem="ZQ4-KT-ACq" secondAttribute="top" constant="25" id="cSK-Sp-1tA"/>
+                        <constraint firstAttribute="height" constant="197" id="dSd-uV-QzS"/>
+                        <constraint firstAttribute="trailing" secondItem="3cf-Jz-rox" secondAttribute="trailing" constant="14" id="jVW-TF-79e"/>
+                        <constraint firstItem="Nxi-EV-Bvv" firstAttribute="top" secondItem="3cf-Jz-rox" secondAttribute="bottom" constant="25" id="n9H-50-8bf"/>
+                        <constraint firstItem="3cf-Jz-rox" firstAttribute="leading" secondItem="ZQ4-KT-ACq" secondAttribute="leading" constant="14" id="nG1-7w-Mhf"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                            <size key="value" width="0.0" height="3"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                            <real key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40000000000000002" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="ZQ4-KT-ACq" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="30" id="8n8-8t-jqI"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ZQ4-KT-ACq" secondAttribute="trailing" constant="30" id="gRe-Ux-bHe"/>
+                <constraint firstItem="ZQ4-KT-ACq" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="kQL-9C-SMw"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="btnNo" destination="qfL-a1-IKl" id="Y3q-lY-Rfi"/>
+                <outlet property="btnSubmit" destination="JLH-WM-ndR" id="pQy-12-pzj"/>
+                <outlet property="txtPassword" destination="Nxi-EV-Bvv" id="BA7-so-bzF"/>
+            </connections>
+        </view>
+    </objects>
+</document>

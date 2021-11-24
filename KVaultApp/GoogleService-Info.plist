@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>87814-hbdmc2bf10rn8ubc6rmaaorv6r9o19gl.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.87814-hbdmc2bf10rn8ubc6rmaaorv6r9o19gl</string>
+	<key>API_KEY</key>
+	<string>AIzaSyArfqpydaMScFn9Coha8y50AAAA</string>
+	<key>GCM_SENDER_ID</key>
+	<string>87814</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.airson.secretvaultapp</string>
+	<key>PROJECT_ID</key>
+	<string>secret-photo-vault-app</string>
+	<key>STORAGE_BUCKET</key>
+	<string>secret-photo-vault-app.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:878144652137:ios:9c3cc713d168cec5</string>
+	<key>DATABASE_URL</key>
+	<string>https://secret-photo-vault-app.firebaseio.com</string>
+</dict>
+</plist>
